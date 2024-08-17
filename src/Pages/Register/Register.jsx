@@ -77,7 +77,7 @@ const Register = () => {
       setShow(!show)
      }
     return (
-        <div className="container flex justify-center items-center flex-col mx-auto
+        <div className=" flex justify-center items-center flex-col w-full
         ">
             <div className="my-12 md:w-1/2 w-full p-4 md:p-8 shadow rounded-2xl">
                 <div className="text-center space-y-2">

@@ -24,11 +24,7 @@ const Navber = () => {
             Home
         </NavLink>
     </li>
-    <li>
-        <NavLink to='/contact'>
-            contact us  
-        </NavLink>
-    </li>
+
     
     <li>
         <NavLink to='/our_menu'>
@@ -43,6 +39,11 @@ const Navber = () => {
     <li>
         <NavLink to='/secret'>
             Catagories
+        </NavLink>
+    </li>
+    <li>
+        <NavLink to='/contact'>
+            contact us  
         </NavLink>
     </li>
     </>
@@ -74,7 +75,7 @@ const Navber = () => {
                {navOption}
             </ul>
           </div>
-          <a className="btn btn-ghost md:text-xl text-base uppercase cinzel font-semibold text-white"><Link>Sortify</Link>
+          <a className="btn btn-ghost md:text-xl text-base uppercase cinzel font-semibold text-white "><Link>Sortify</Link>
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
