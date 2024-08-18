@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+
 const Product = ({ product }) => {
-  const { title, description, price, rating, images } = product;
+  const { title, description, price, rating, images,id} = product;
   return (
     <div className="relative flex flex-col justify-between w-full h-full overflow-hidden border border-gray-400  hover:-translate-y-2 transform transition duration-200 rounded-xl">
       <div className="relative cursor-pointer mx-3 mt-3 flex h-60 overflow-hidden rounded-xl">
@@ -36,8 +38,8 @@ const Product = ({ product }) => {
           </div>
         </div>
         <p className="mb-3 text-sm">Jul 16, 2024, 2:05 AM</p>
-        <a
-          href=""
+        <Link
+           to={`/product/${product.id}`}
           className="flex items-center justify-center bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300"
         >
           <svg
@@ -55,7 +57,7 @@ const Product = ({ product }) => {
             ></path>
           </svg>
           Buy Now
-        </a>
+        </Link>
       </div>
     </div>
   );
