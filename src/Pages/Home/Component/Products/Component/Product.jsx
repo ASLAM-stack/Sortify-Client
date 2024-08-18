@@ -1,9 +1,10 @@
  
 
-const Product = () => {
+const Product = ({product }) => {
+    
     return (
         <div>
-            
+              
         </div>
     );
 };

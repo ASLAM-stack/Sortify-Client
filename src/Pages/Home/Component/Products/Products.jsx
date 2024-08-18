@@ -25,7 +25,7 @@ const Products = () => {
                 </div>
                 <div className="Products">
                     {
-                        products.length === 0 ? <Emty></Emty> : <AllProducts products={products}></AllProducts>
+                        products.length === 0 ? <Emty></Emty> : <AllProducts products={products} ></AllProducts>
                     }
                 </div>
             </div>
